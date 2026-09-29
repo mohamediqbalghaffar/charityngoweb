@@ -1,6 +1,7 @@
 # Charity NGO Web 🤝 (Aid Tracking & Approvals Showcase)
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-charityngoweb.vercel.app-00C7B7?style=for-the-badge&logo=vercel&logoColor=white)](https://charityngoweb.vercel.app)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/mohamediqbalghaffar/charityngoweb&project-name=charityngoweb)
 [![React](https://img.shields.io/badge/React-19.x-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
