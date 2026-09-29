@@ -62,7 +62,7 @@ export const DeveloperApiModal: React.FC<Props> = ({ isOpen, onClose }) => {
     setApiResponse({
       status: 200,
       timestamp: new Date().toISOString(),
-      organization: 'ڕێکخراوی بۆتان بامۆکی',
+      organization: 'ڕێکخراوی خێرخوازی هیوا',
       endpoint: currentEndpoint.path,
       resultsCount: currentEndpoint.data.length,
       data: currentEndpoint.data
@@ -94,7 +94,7 @@ export const DeveloperApiModal: React.FC<Props> = ({ isOpen, onClose }) => {
               </span>
             </h3>
             <p className="text-xs text-slate-500 mt-0.5">
-              ڕێکخراوی بۆتان بامۆکی • دەروازەی بەستنەوەی نەرمەکاڵا و مۆبایل ئەپەکان
+              ڕێکخراوی خێرخوازی هیوا • دەروازەی بەستنەوەی نەرمەکاڵا و مۆبایل ئەپەکان
             </p>
           </div>
         </div>

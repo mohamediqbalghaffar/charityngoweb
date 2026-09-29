@@ -123,7 +123,7 @@ export const Topbar: React.FC = () => {
             <div>
               <div className="flex items-center gap-2">
                 <h1 className="text-lg font-bold tracking-tight text-slate-900 flex items-center gap-1.5">
-                  ڕێکخراوی بۆتان بامۆکی
+                  ڕێکخراوی خێرخوازی هیوا
                   <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-cyan-100 text-cyan-800 border border-cyan-200">
                     خێرخوازی
                   </span>
@@ -453,7 +453,7 @@ export const Topbar: React.FC = () => {
                   </div>
                 )}
                 <div className="hidden sm:block text-right">
-                  <p className="text-xs font-bold text-slate-900 leading-tight">{currentUser?.name || 'محمد ئیقبال'}</p>
+                  <p className="text-xs font-bold text-slate-900 leading-tight">{currentUser?.name || 'ئاراس ئەحمەد'}</p>
                   <p className="text-[10px] text-cyan-700 font-bold">{currentUser?.roleTitleKurdish || 'بەڕێوەبەری گشتی'}</p>
                 </div>
                 <ChevronDown className="w-4 h-4 text-slate-500 group-hover:text-slate-900 transition-transform" />
@@ -477,8 +477,8 @@ export const Topbar: React.FC = () => {
                         </div>
                       )}
                       <div className="flex-1 min-w-0">
-                        <p className="text-xs font-black text-slate-900 truncate">{currentUser?.name || 'محمد ئیقبال'}</p>
-                        <p className="text-[10px] text-slate-600 font-mono truncate">{currentUser?.email || 'mohammed.iqbal@halabjagroup'}</p>
+                        <p className="text-xs font-black text-slate-900 truncate">{currentUser?.name || 'ئاراس ئەحمەد'}</p>
+                        <p className="text-[10px] text-slate-600 font-mono truncate">{currentUser?.email || 'admin@charityngo.org'}</p>
                         <span className="inline-block mt-0.5 text-[10px] font-bold px-2 py-0.2 rounded-full bg-cyan-100 text-cyan-800 border border-cyan-200">
                           {currentUser?.roleTitleKurdish || 'بەڕێوەبەری گشتی (Admin)'}
                         </span>

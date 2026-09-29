@@ -578,7 +578,7 @@ export const INITIAL_BENEFICIARIES: Beneficiary[] = [
   {
     id: 'ben-zkh-01',
     nationalId: '198010044332',
-    fullName: 'بۆتان ڕەشید پیرۆ',
+    fullName: 'دڵشاد ڕەشید پیرۆ',
     phone: '0750 776 5544',
     gender: 'male',
     age: 46,
@@ -594,7 +594,7 @@ export const INITIAL_BENEFICIARIES: Beneficiary[] = [
     notes: 'کرێکاری مەیدانە، ٥ منداڵی هەیە و باری داراییان نالەبارە.',
     registeredDate: '2026-02-24',
     aidHistory: [],
-    location: { lat: 37.1455, lng: 42.6844, label: 'ماڵی بۆتان ڕەشید - گەڕەکی دێلالی' }
+    location: { lat: 37.1455, lng: 42.6844, label: 'ماڵی دڵشاد ڕەشید - گەڕەکی دێلالی' }
   },
   {
     id: 'ben-zkh-02',
@@ -1150,7 +1150,7 @@ export const INITIAL_TRANSACTIONS: FinancialTransaction[] = [
     category: 'بەخشینی دارایی',
     date: '2026-02-01',
     description: 'وەرگرتنی بەخشینی نەختینەیی لە کۆمپانیای کاروان بە پسوولەی RC-2026-001',
-    recordedBy: 'محەمەد ئیقبال',
+    recordedBy: 'ئاراس ئەحمەد',
     relatedProjectId: 'proj-01',
     receiptNumber: 'RC-2026-001',
     isCash: true
@@ -1163,7 +1163,7 @@ export const INITIAL_TRANSACTIONS: FinancialTransaction[] = [
     category: 'بەخشینی دارایی',
     date: '2026-02-10',
     description: 'حەواڵەی خێرخوازانی دیاسپۆرای ئەڵمانیا بە پسوولەی RC-2026-002',
-    recordedBy: 'محەمەد ئیقبال',
+    recordedBy: 'ئاراس ئەحمەد',
     relatedProjectId: 'proj-03',
     receiptNumber: 'RC-2026-002',
     isCash: true
@@ -1200,7 +1200,7 @@ export const INITIAL_TRANSACTIONS: FinancialTransaction[] = [
     category: 'بەخشینی کاڵا / کەرەستە',
     date: '2026-02-14',
     description: 'بەخشینی ٦٠ سۆپای زستانە لەلایەن گروپی پیشەسازی ئارام (تۆمارکراوی عەینی)',
-    recordedBy: 'محەمەد ئیقبال',
+    recordedBy: 'ئاراس ئەحمەد',
     relatedProjectId: 'proj-02',
     receiptNumber: 'RC-2026-003',
     isCash: false,
@@ -1216,7 +1216,7 @@ export const INITIAL_TRANSACTIONS: FinancialTransaction[] = [
     category: 'دابەشکردنی کەلوپەل',
     date: '2026-02-28',
     description: 'دابەشکردنی ٥٣ سۆپای زستانە بەسەر ٥٣ سوودمەند بە نرخی ٥٠,٠٠٠ دینار بۆ هەر دانەیەک',
-    recordedBy: 'محەمەد ئیقبال',
+    recordedBy: 'ئاراس ئەحمەد',
     relatedProjectId: 'proj-02',
     receiptNumber: 'TX-AID-INV-01',
     isCash: false,
@@ -1232,7 +1232,7 @@ export const INITIAL_TRANSACTIONS: FinancialTransaction[] = [
     category: 'کەفالەتی هەتیوان',
     date: '2026-02-20',
     description: 'وەرگرتنی بەخشین لە حاجی عوسمان بە پسوولەی RC-2026-004',
-    recordedBy: 'محەمەد ئیقبال',
+    recordedBy: 'ئاراس ئەحمەد',
     relatedProjectId: 'proj-04',
     receiptNumber: 'RC-2026-004',
     isCash: true
@@ -1402,7 +1402,7 @@ export const INITIAL_AUDIT_LOGS: AuditLog[] = [
   {
     id: 'log-01',
     timestamp: '2026-03-01 10:15:20',
-    userName: 'محەمەد ئیقبال',
+    userName: 'ئاراس ئەحمەد',
     userRole: 'admin',
     action: 'تۆمارکردنی بەخشین',
     details: 'بەخشینی کاڵای ٦٠ دانە سۆپای زستانە تۆمارکرا بە بەهای ٣,٠٠٠,٠٠٠ دینار (پسوولەی RC-2026-003)',
@@ -1411,7 +1411,7 @@ export const INITIAL_AUDIT_LOGS: AuditLog[] = [
   {
     id: 'log-02',
     timestamp: '2026-03-02 11:30:45',
-    userName: 'محەمەد ئیقبال',
+    userName: 'ئاراس ئەحمەد',
     userRole: 'admin',
     action: 'دابەشکردنی بەکۆمەڵی هاوکاری',
     details: '٥٣ دانە لە سۆپای زستانە بەسەر ٥٣ سوودمەند دابەشکرا و ژمارەی کۆگا کەمکرایەوە بۆ ٧ دانە',
@@ -1420,7 +1420,7 @@ export const INITIAL_AUDIT_LOGS: AuditLog[] = [
   {
     id: 'log-03',
     timestamp: '2026-03-04 14:22:10',
-    userName: 'محەمەد ئیقبال',
+    userName: 'ئاراس ئەحمەد',
     userRole: 'admin',
     action: 'زیادکردنی سوودمەندی نهێنی',
     details: 'دۆسیەی سوودمەندی نهێنی و پارێزراو بە سەرکەوتوویی تۆمارکرا بە ناونیشانی شاردراوە',

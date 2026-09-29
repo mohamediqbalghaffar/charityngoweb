@@ -217,9 +217,9 @@ export const VolunteersView: React.FC = () => {
               
               <div className="flex items-center justify-center gap-2">
                 <div className="w-7 h-7 rounded-lg bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-white font-bold text-xs">
-                  بـ
+                  هـ
                 </div>
-                <h4 className="text-xs font-bold text-slate-900 tracking-tight">ڕێکخراوی بۆتان بامۆکی</h4>
+                <h4 className="text-xs font-bold text-slate-900 tracking-tight">ڕێکخراوی خێرخوازی هیوا</h4>
               </div>
 
               <div className="w-20 h-20 mx-auto rounded-2xl bg-gradient-to-tr from-blue-500 to-cyan-500 p-[2px] shadow-sm">

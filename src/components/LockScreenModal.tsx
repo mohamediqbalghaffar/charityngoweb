@@ -54,7 +54,7 @@ export const LockScreenModal: React.FC = () => {
       <div className="text-center pt-8 space-y-2">
         <div className="flex items-center justify-center gap-2 text-cyan-400 text-xs font-bold bg-white/10 backdrop-blur-md px-4 py-1 rounded-full border border-white/15 inline-flex">
           <ShieldCheck className="w-4 h-4" />
-          <span>سیستەمی پارێزراوی ڕێکخراوی بۆتان بامۆکی</span>
+          <span>سیستەمی پارێزراوی ڕێکخراوی خێرخوازی هیوا</span>
         </div>
         <div className="text-5xl sm:text-6xl font-black tracking-tight text-white/95 font-mono">
           {currentTime || '١١:٣٠'}
@@ -84,7 +84,7 @@ export const LockScreenModal: React.FC = () => {
         </div>
 
         <div className="text-center">
-          <h3 className="text-lg font-bold text-white">{currentUser?.name || 'محمد ئیقبال'}</h3>
+          <h3 className="text-lg font-bold text-white">{currentUser?.name || 'ئاراس ئەحمەد'}</h3>
           <p className="text-xs text-cyan-300">{currentUser?.roleTitleKurdish || 'بەڕێوەبەری گشتی'}</p>
         </div>
 

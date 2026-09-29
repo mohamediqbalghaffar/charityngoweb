@@ -64,7 +64,7 @@ export const AccessibilityModal: React.FC<Props> = ({ isOpen, onClose }) => {
             <h3 className="text-lg font-black text-slate-900 flex items-center gap-2">
               دەستپێگەیشتن و فرەزمانی (Accessibility & Languages)
             </h3>
-            <p className="text-xs text-slate-500 mt-0.5">ڕێکخراوی بۆتان بامۆکی • ڕێکخستنی بینین و فەرهەنگی زاراوەکان</p>
+            <p className="text-xs text-slate-500 mt-0.5">ڕێکخراوی خێرخوازی هیوا • ڕێکخستنی بینین و فەرهەنگی زاراوەکان</p>
           </div>
         </div>
 

@@ -39,7 +39,7 @@ export const PRESET_OPTIONS = {
 
 export const downloadBeneficiaryExcelTemplate = async () => {
   const workbook = new ExcelJS.Workbook();
-  workbook.creator = 'ڕێکخراوی بۆتان بامۆکی';
+  workbook.creator = 'ڕێکخراوی خێرخوازی هیوا';
   workbook.created = new Date();
 
   // 1. Create Lookup sheet for strict validation dropdowns (hidden from clutter)

@@ -9,11 +9,11 @@ export const ROLE_LABELS: Record<UserRole, { titleKurdish: string; badgeColor: s
   auditor: { titleKurdish: 'وردبین / چاودێر (Auditor)', badgeColor: 'bg-amber-100 text-amber-800 border-amber-200' }
 };
 
-// Initial Super Admin User requested by organization
+// Initial Super Admin User for showcase
 export const INITIAL_ADMIN_USER: UserProfile = {
-  id: 'user-admin-iqbal',
-  name: 'محمد ئیقبال',
-  email: 'mohammed.iqbal@halabjagroup',
+  id: 'user-admin-main',
+  name: 'ئاراس ئەحمەد',
+  email: 'admin@charityngo.org',
   role: 'admin',
   roleTitleKurdish: 'بەڕێوەبەری گشتی (Super Admin)',
   avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=256&q=80',
@@ -64,10 +64,10 @@ export async function authenticateUser(
 
   // 1. Check initial Super Admin (Fast path & offline fallback)
   const isInitialAdminId =
-    cleanId === 'mohammed.iqbal@halabjagroup' ||
-    cleanId === 'mohammed.iqbal@halabjagroup.com' ||
-    cleanId === 'mohammed.iqbal' ||
-    cleanId === 'admin';
+    cleanId === 'admin@charityngo.org' ||
+    cleanId === 'admin@charityngo' ||
+    cleanId === 'admin' ||
+    cleanId === 'aras.ahmad@charityngo.org';
 
   if (isInitialAdminId && (cleanPwd === 'Admin@2026' || cleanPwd === 'admin1234' || cleanPwd === 'admin')) {
     const adminProfile: UserProfile = {

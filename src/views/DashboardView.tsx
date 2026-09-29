@@ -151,7 +151,7 @@ export const DashboardView: React.FC = () => {
 
   const exportImpactReport = () => {
     const report = [
-      `ڕاپۆرتی کاریگەری و شەفافییەت - ڕێکخراوی بۆتان بامۆکی`,
+      `ڕاپۆرتی کاریگەری و شەفافییەت - ڕێکخراوی خێرخوازی هیوا`,
       `بەرواری هەناردەکردن: ${new Date().toLocaleDateString('ckb-IQ')} - ${new Date().toLocaleTimeString()}`,
       `ماوەی فلتەرکراو: لە ${fromDate} بۆ ${toDate}`,
       `پارێزگا: ${governorateFilter}`,

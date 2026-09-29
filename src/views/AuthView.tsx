@@ -23,7 +23,7 @@ export const AuthView: React.FC = () => {
   const [mode, setMode] = useState<'login' | 'signup'>('login');
 
   // Login form state
-  const [loginIdentifier, setLoginIdentifier] = useState('mohammed.iqbal@halabjagroup');
+  const [loginIdentifier, setLoginIdentifier] = useState('admin@charityngo.org');
   const [loginPassword, setLoginPassword] = useState('Admin@2026');
   const [showLoginPassword, setShowLoginPassword] = useState(false);
 
@@ -43,7 +43,7 @@ export const AuthView: React.FC = () => {
 
   // Quick fill Admin credentials
   const fillAdminCredentials = () => {
-    setLoginIdentifier('mohammed.iqbal@halabjagroup');
+    setLoginIdentifier('admin@charityngo.org');
     setLoginPassword('Admin@2026');
     setErrorMsg('');
   };
@@ -117,7 +117,7 @@ export const AuthView: React.FC = () => {
 
           <div>
             <h1 className="text-2xl sm:text-3xl font-black text-white tracking-tight flex items-center justify-center gap-2">
-              ڕێکخراوی بۆتان بامۆکی
+              ڕێکخراوی خێرخوازی هیوا
               <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-400/30">
                 خێرخوازی
               </span>
@@ -200,7 +200,7 @@ export const AuthView: React.FC = () => {
               <div className="p-3 rounded-2xl bg-cyan-950/40 border border-cyan-800/40 flex items-center justify-between gap-2">
                 <div className="flex items-center gap-2 text-xs text-cyan-300">
                   <Sparkles className="w-4 h-4 text-cyan-400" />
-                  <span>هەژماری سەرەکی: <strong>mohammed.iqbal@halabjagroup</strong></span>
+                  <span>هەژماری سەرەکی: <strong>admin@charityngo.org</strong></span>
                 </div>
                 <button
                   type="button"
@@ -223,7 +223,7 @@ export const AuthView: React.FC = () => {
                     required
                     value={loginIdentifier}
                     onChange={e => setLoginIdentifier(e.target.value)}
-                    placeholder="mohammed.iqbal@halabjagroup"
+                    placeholder="admin@charityngo.org"
                     className="w-full px-4 py-3 rounded-2xl bg-slate-950/60 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-sm transition-all"
                   />
                 </div>
@@ -307,7 +307,7 @@ export const AuthView: React.FC = () => {
                   required
                   value={signupEmail}
                   onChange={e => setSignupEmail(e.target.value)}
-                  placeholder="user@halabjagroup.com"
+                  placeholder="user@charityngo.org"
                   className="w-full px-4 py-2.5 rounded-2xl bg-slate-950/60 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 text-sm"
                 />
               </div>

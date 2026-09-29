@@ -59,7 +59,7 @@ export const SecurityModal: React.FC<Props> = ({ isOpen, onClose }) => {
           </div>
           <div>
             <h3 className="text-lg font-black text-slate-900">سەنتەری ئاسایش و پاراستنی داتابەیس</h3>
-            <p className="text-xs text-slate-500 mt-0.5">ڕێکخراوی بۆتان بامۆکی • ڕاستاندنی دوو هەنگاوی و کۆپی یەدەگ</p>
+            <p className="text-xs text-slate-500 mt-0.5">ڕێکخراوی خێرخوازی هیوا • ڕاستاندنی دوو هەنگاوی و کۆپی یەدەگ</p>
           </div>
         </div>
 

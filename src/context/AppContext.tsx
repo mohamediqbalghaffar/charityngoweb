@@ -194,12 +194,12 @@ interface AppContextType {
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
 
-const SYSTEM_VERSION = 'v_showcase_standalone_2026';
+const SYSTEM_VERSION = 'v_showcase_standalone_2026_v2';
 
 export const SHOWCASE_DEFAULT_USER: UserProfile = {
-  id: 'user-admin-iqbal',
-  name: 'محمد ئیقبال (بەسەرکەرەوەی سیستەم)',
-  email: 'mohammed.iqbal@halabjagroup.com',
+  id: 'user-admin-main',
+  name: 'ئاراس ئەحمەد (بەسەرکەرەوەی سیستەم)',
+  email: 'admin@charityngo.org',
   role: 'admin',
   roleTitleKurdish: 'بەڕێوەبەری گشتی (Super Admin)',
   avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=256&q=80',
@@ -597,7 +597,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     const newLog: AuditLog = {
       id: `log-${Date.now()}`,
       timestamp: new Date().toISOString().replace('T', ' ').substring(0, 19),
-      userName: currentUser ? currentUser.name : 'محمد ئیقبال',
+      userName: currentUser ? currentUser.name : 'ئاراس ئەحمەد',
       userRole: currentRole,
       action,
       details,
@@ -918,7 +918,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         category: 'هاوکاری نەختینەیی سوودمەند',
         date: aidDate,
         description: `هاوکاری نەختینەیی بۆ [${ben?.fullName || 'سوودمەند'}] - ${record.projectTitle}`,
-        recordedBy: record.distributedBy || (currentUser ? currentUser.name : 'محمد ئیقبال'),
+        recordedBy: record.distributedBy || (currentUser ? currentUser.name : 'ئاراس ئەحمەد'),
         relatedProjectId: matchedProjectId
       };
       nextTransactions = [aidTx, ...transactions];
@@ -1005,7 +1005,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       description: isInKind && data.itemDetails
         ? `بەخشینی فەرمی [${data.categoryLabel || 'کۆمەک'}] لەلایەن [${data.donorName}] - ${data.itemDetails.quantity} ${data.itemDetails.unit || 'دانە'} (هەر دانەیەک ${(unitPrice || 0).toLocaleString()} ${data.currency === 'IQD' ? 'د.ع' : '$'}) بە پسوولەی ${receiptNumber}`
         : `بەخشینی فەرمی لەلایەن [${data.donorName}] بە پسوولەی ${receiptNumber}`,
-      recordedBy: currentUser ? currentUser.name : 'محمد ئیقبال',
+      recordedBy: currentUser ? currentUser.name : 'ئاراس ئەحمەد',
       relatedProjectId: data.projectId,
       receiptNumber,
       isCash: !isInKind,
@@ -1494,7 +1494,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     updateInventoryQuantity(itemId, -quantity);
 
     const todayStr = new Date().toISOString().split('T')[0];
-    const distributorName = currentUser ? currentUser.name : 'محمد ئیقبال';
+    const distributorName = currentUser ? currentUser.name : 'ئاراس ئەحمەد';
 
     // Add aid record
     addAidRecord(beneficiaryId, {
@@ -1588,7 +1588,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     updateInventoryQuantity(itemId, -totalNeeded);
 
     const todayStr = new Date().toISOString().split('T')[0];
-    const distributorName = currentUser ? currentUser.name : 'محمد ئیقبال';
+    const distributorName = currentUser ? currentUser.name : 'ئاراس ئەحمەد';
 
     // Add aid records to all target beneficiaries
     validDists.forEach(({ beneficiaryId, quantity }) => {
@@ -1823,7 +1823,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const exportDataJSON = () => {
     const fullBackup = {
       exportDate: new Date().toISOString(),
-      organization: 'ڕێکخراوی بۆتان بامۆکی',
+      organization: 'ڕێکخراوی خێرخوازی هیوا',
       beneficiaries,
       donors,
       donations,
@@ -1896,7 +1896,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       id: `ann-${Date.now()}`,
       title,
       content,
-      author: currentUser ? currentUser.name : 'محمد ئیقبال',
+      author: currentUser ? currentUser.name : 'ئاراس ئەحمەد',
       date: new Date().toISOString().split('T')[0],
       tag
     };

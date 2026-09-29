@@ -207,7 +207,7 @@ export const DocumentsView: React.FC = () => {
               </button>
               <button
                 onClick={() => {
-                  const blob = new Blob([`بەڵگەنامەی فەرمی ڕێکخراوی بۆتان بامۆکی\nناونیشان: ${doc.title}\nپەیوەستە بە: ${doc.relatedEntity}\nبەروار: ${doc.uploadDate}`], { type: 'text/plain;charset=utf-8' });
+                  const blob = new Blob([`بەڵگەنامەی فەرمی ڕێکخراوی خێرخوازی هیوا\nناونیشان: ${doc.title}\nپەیوەستە بە: ${doc.relatedEntity}\nبەروار: ${doc.uploadDate}`], { type: 'text/plain;charset=utf-8' });
                   const url = URL.createObjectURL(blob);
                   const a = document.createElement('a');
                   a.href = url;
@@ -263,7 +263,7 @@ export const DocumentsView: React.FC = () => {
               <ShieldCheck className="w-12 h-12 text-emerald-600 mx-auto" />
               <p className="text-xs text-slate-900 font-bold">بەڵگەنامەی پارێزراوی ئەلیکترۆنی</p>
               <p className="text-[11px] text-slate-600 leading-relaxed">
-                ئەم فایلە بە کۆدکردنی پارێزراو لە داتابەیسی ڕێکخراوی بۆتان بامۆکی پاشەکەوت کراوە بەپێی ڕێنماییەکانی پاراستنی تایبەتمەندی خێزانەکان.
+                ئەم فایلە بە کۆدکردنی پارێزراو لە داتابەیسی ڕێکخراوی خێرخوازی هیوا پاشەکەوت کراوە بەپێی ڕێنماییەکانی پاراستنی تایبەتمەندی خێزانەکان.
               </p>
               <div className="inline-block font-mono text-[11px] px-3 py-1 rounded-xl bg-white border border-slate-200 text-slate-700 shadow-sm">
                 پەیوەستە بە: {selectedDoc.relatedEntity} • قەبارە: {selectedDoc.fileSize}
@@ -279,7 +279,7 @@ export const DocumentsView: React.FC = () => {
               </button>
               <button
                 onClick={() => {
-                  const blob = new Blob([`بەڵگەنامەی فەرمی ڕێکخراوی بۆتان بامۆکی\nناونیشان: ${selectedDoc.title}\nپەیوەستە بە: ${selectedDoc.relatedEntity}\nقەبارە: ${selectedDoc.fileSize}\nبەروار: ${selectedDoc.uploadDate}`], { type: 'text/plain;charset=utf-8' });
+                  const blob = new Blob([`بەڵگەنامەی فەرمی ڕێکخراوی خێرخوازی هیوا\nناونیشان: ${selectedDoc.title}\nپەیوەستە بە: ${selectedDoc.relatedEntity}\nقەبارە: ${selectedDoc.fileSize}\nبەروار: ${selectedDoc.uploadDate}`], { type: 'text/plain;charset=utf-8' });
                   const url = URL.createObjectURL(blob);
                   const a = document.createElement('a');
                   a.href = url;
